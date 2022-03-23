@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@drawable/land_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,60 +18,57 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:fontFamily="sans-serif"
-            android:text="读取数据"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:text="Maxim首页"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/maxim" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
             android:fontFamily="sans-serif"
-            android:text="将设备靠近以读取"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-    </LinearLayout>
+            android:text="请将手机靠近NFC码"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/input_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="50dp"
-        android:gravity="center"
-        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="78dp"
+            app:srcCompat="@drawable/scan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:fontFamily="sans-serif"
+            android:text="开始侦测NFC标签"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtviewshopid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
             android:fontFamily="sans-serif"
-            android:text="Shop ID will be here!"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtviewmachineid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="Machine ID will be here!"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtviewuserid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="User ID will be here"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="用户使用引导"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 </RelativeLayout>
